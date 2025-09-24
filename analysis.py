@@ -34,7 +34,7 @@ except Exception as e:
 # Azure client setup
 client = ChatCompletionsClient(
     endpoint="https://models.inference.ai.azure.com",
-    credential=AzureKeyCredential("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")
+    credential=AzureKeyCredential("use_ur_key")
 )
 
 def extract_text_from_pdf(pdf_path):
@@ -140,3 +140,4 @@ def process_pdf(pdf_path):
         }
     except Exception as e:
         raise RuntimeError(f"Processing failed: {str(e)}")
+
